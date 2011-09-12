@@ -17,7 +17,7 @@ void setup()
 println(Arduino.list());
 arduino = new Arduino(this, Arduino.list()[0], 57600);
 
-dOut = new DataOut(this, "http://www.pachube.com/api/35559.xml", "vWaQy2Z1IjWB50n6VloOgEKarM5O9Kj9pWUfAVaUD2o"); 
+dOut = new DataOut(this, "http://www.pachube.com/api/35559.xml", "MY_API"); 
 
 dOut.addData(0,"lightSensor");
 dOut.addData(1,"Button1");
